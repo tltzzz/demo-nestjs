@@ -24,7 +24,9 @@
     "typeorm:run": "npm run typeorm migration:run",
     "typeorm:create": "npm run typeorm migration:create -- -n",
     "typeorm:revert": "npm run typeorm migration:revert",
-    "docker:run": "docker-compose -f docker/docker-compose.yml up -d"
+    "docker:init": "docker-compose -f docker/docker-compose.yml up -d --build && sudo chown -Rf 5050:5050 docker/pgadmin && sleep 5 && sudo chmod 777 -Rf docker/pg*",
+    "docker:run": "docker-compose -f docker/docker-compose.yml up -d",
+    "init": "npm run docker:init && npm run typeorm:run && tput setaf 2 && echo 'Для запуска выполнети npm run start'"
   },
   "dependencies": {
     "@nestjs/apollo": "^10.0.7",

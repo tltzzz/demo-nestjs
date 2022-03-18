@@ -5,17 +5,21 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Description
+## Описание
 
 Demo NestJS
 
-## Installation
+## Установка
 
 ```bash
+# node modules
 $ npm install
+
+# init app
+$ npm run init
 ```
 
-## Running the app
+## Команды
 
 ```bash
 # docker
@@ -30,3 +34,8 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 ```
+
+## Адреса
+
+Server - http://localhost:3000
+PgAdmin - http://localhost:8080
