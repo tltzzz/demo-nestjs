@@ -37,5 +37,5 @@ $ npm run start:dev
 
 ## Адреса
 
-Server - http://localhost:3000
-PgAdmin - http://localhost:8080
+Server - http://localhost:3000  
+PgAdmin - http://localhost:8080  
